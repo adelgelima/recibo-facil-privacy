@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidade — Recibo Fácil</title>
+  <meta name="description" content="Política de privacidade do aplicativo Recibo Fácil. Privacy policy for the Recibo Fácil app.">
+  <style>
+    /* ----- Reset & base ----- */
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                   'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.65;
+      color: #2D3748;
+      background: #F7F8FA;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ----- Header ----- */
+    header {
+      background: linear-gradient(180deg, #5BC25F 0%, #3D9C42 100%);
+      color: #fff;
+      padding: 36px 24px 28px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .header-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .header-icon {
+      width: 56px; height: 56px;
+      background: #fff;
+      border-radius: 14px;
+      display: grid; place-items: center;
+      flex-shrink: 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .header-icon svg { width: 32px; height: 32px; color: #4CAF50; }
+    .header-title h1 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    .header-title p {
+      margin: 2px 0 0;
+      opacity: 0.92;
+      font-size: 14px;
+    }
+
+    /* ----- Lang toggle ----- */
+    .lang-toggle {
+      display: flex;
+      gap: 4px;
+      background: rgba(255,255,255,0.18);
+      padding: 4px;
+      border-radius: 10px;
+      margin-left: auto;
+    }
+    .lang-toggle button {
+      border: none;
+      background: transparent;
+      color: #fff;
+      font-weight: 600;
+      font-size: 13px;
+      padding: 6px 12px;
+      border-radius: 7px;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .lang-toggle button.active {
+      background: #fff;
+      color: #2E7D32;
+    }
+    .lang-toggle button:not(.active):hover {
+      background: rgba(255,255,255,0.12);
+    }
+
+    /* ----- Content ----- */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 28px 24px 80px;
+    }
+    article { display: none; }
+    article.active { display: block; }
+
+    .meta {
+      display: inline-block;
+      background: #E8F5E9;
+      color: #2E7D32;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: #1A202C;
+      margin: 36px 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #E2E8F0;
+    }
+    h2:first-of-type { margin-top: 8px; }
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #2D3748;
+      margin: 22px 0 8px;
+    }
+    p { margin: 0 0 14px; }
+    ul { margin: 0 0 14px; padding-left: 22px; }
+    li { margin-bottom: 6px; }
+    a {
+      color: #2E7D32;
+      text-decoration: none;
+      border-bottom: 1px solid #A5D6A7;
+    }
+    a:hover { background: #E8F5E9; }
+
+    .highlight {
+      background: #E8F5E9;
+      border-left: 4px solid #4CAF50;
+      padding: 14px 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+    }
+    .highlight strong { color: #1B5E20; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+      font-size: 14px;
+    }
+    th {
+      background: #F7F8FA;
+      text-align: left;
+      padding: 10px 12px;
+      font-weight: 700;
+      color: #4A5568;
+      border-bottom: 2px solid #E2E8F0;
+    }
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #EDF2F7;
+      vertical-align: top;
+    }
+    tr:last-child td { border-bottom: none; }
+
+    code {
+      background: #EDF2F7;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'SFMono-Regular', Consolas, monospace;
+      font-size: 13px;
+      color: #2D3748;
+    }
+
+    /* ----- Footer ----- */
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #718096;
+      font-size: 13px;
+      border-top: 1px solid #E2E8F0;
+      background: #fff;
+    }
+    footer a { color: #4A5568; }
+
+    /* ----- Mobile ----- */
+    @media (max-width: 520px) {
+      header { padding: 24px 16px 20px; }
+      .header-title h1 { font-size: 19px; }
+      .header-title p { font-size: 13px; }
+      main { padding: 20px 16px 60px; }
+      h2 { font-size: 18px; }
+      table { font-size: 13px; }
+      th, td { padding: 8px 10px; }
+      .lang-toggle {
+        margin-left: 0;
+        margin-top: 12px;
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+           stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+        <polyline points="14 2 14 8 20 8"/>
+        <line x1="9" y1="13" x2="15" y2="13"/>
+        <line x1="9" y1="17" x2="13" y2="17"/>
+      </svg>
+    </div>
+    <div class="header-title">
+      <h1>Recibo Fácil</h1>
+      <p id="header-sub">Política de Privacidade</p>
+    </div>
+    <div class="lang-toggle" role="tablist" aria-label="Idioma / Language">
+      <button id="btn-pt" class="active" role="tab" aria-selected="true">Português</button>
+      <button id="btn-en" role="tab" aria-selected="false">English</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================================================
+       PORTUGUÊS (BR)
+       ============================================================ -->
+  <article id="content-pt" class="active" lang="pt-BR">
+
+    <div class="meta">Última atualização: 01 de maio de 2026</div>
+
+    <p>
+      Esta Política de Privacidade descreve como o aplicativo
+      <strong>Recibo Fácil</strong> ("aplicativo", "app", "nós") trata as
+      informações dos usuários ("você") em conformidade com a
+      <strong>Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018)</strong>
+      e com as políticas do Google Play.
+    </p>
+
+    <div class="highlight">
+      <strong>Resumo:</strong> O Recibo Fácil funciona 100% offline. Todos os dados
+      que você digita (nome do cliente, valores, descrições, CPF/CNPJ) ficam
+      armazenados <strong>apenas no seu aparelho</strong>. Não enviamos nada para
+      servidores nossos. As únicas informações que saem do seu aparelho são as
+      coletadas pelo Google AdMob (para mostrar anúncios) e pelo Google Play
+      (caso você compre o Recibo Fácil Pro).
+    </div>
+
+    <h2>1. Sobre o Recibo Fácil</h2>
+    <p>
+      O Recibo Fácil é um aplicativo Android que permite gerar recibos de
+      pagamento em formato PDF diretamente no seu celular. É voltado para
+      autônomos, prestadores de serviço, freelancers e pequenas empresas que
+      precisam emitir recibos no dia a dia.
+    </p>
+    <p>
+      O usuário preenche os dados do recibo (cliente, descrição do serviço,
+      valor, data, prestador e CPF/CNPJ) e o app gera um PDF formatado que
+      pode ser compartilhado pelos aplicativos do próprio aparelho (WhatsApp,
+      e-mail, mensagens etc.) ou salvo localmente.
+    </p>
+
+    <h2>2. Quais dados o app coleta?</h2>
+
+    <h3>2.1 Dados que você digita no app</h3>
+    <p>
+      Quando você usa o Recibo Fácil, digita informações como nome do cliente,
+      descrição do serviço, valor, data, nome do prestador e número de CPF ou
+      CNPJ. <strong>Esses dados são armazenados exclusivamente no seu aparelho</strong>,
+      no armazenamento local (<code>localStorage</code> da WebView do app).
+    </p>
+    <p>
+      Nós <strong>não recebemos, não acessamos e não armazenamos</strong> essas
+      informações em nenhum servidor. Quando você desinstala o app, esses dados
+      são apagados junto.
+    </p>
+
+    <h3>2.2 Dados coletados automaticamente por terceiros</h3>
+    <p>
+      O app utiliza serviços de terceiros que podem coletar informações
+      limitadas do seu dispositivo:
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Serviço</th>
+          <th>Dados coletados</th>
+          <th>Finalidade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google AdMob</td>
+          <td>ID de publicidade (Advertising ID), tipo de dispositivo, versão do sistema operacional, idioma, dados aproximados de localização (com base em IP)</td>
+          <td>Exibição e personalização de anúncios; medição de desempenho dos anúncios</td>
+        </tr>
+        <tr>
+          <td>Google Play Billing</td>
+          <td>Token de compra (caso você adquira o Recibo Fácil Pro)</td>
+          <td>Processamento da compra única dentro do app</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      Esses serviços são operados pelo <strong>Google LLC</strong>. As práticas de
+      privacidade deles estão descritas em
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+    </p>
+
+    <h2>3. Como os dados são usados?</h2>
+    <ul>
+      <li><strong>Dados que você digita:</strong> usados apenas para gerar o
+        PDF do recibo, manter o histórico local e pré-preencher campos nas
+        próximas vezes que você usar o app.</li>
+      <li><strong>Identificadores publicitários:</strong> usados pelo Google
+        AdMob para exibir anúncios mais relevantes e medir desempenho.</li>
+      <li><strong>Token de compra:</strong> usado pelo Google Play para
+        confirmar que você adquiriu a versão Pro e remover os anúncios.</li>
+    </ul>
+    <p>
+      Não vendemos seus dados. Não fazemos perfilamento de usuários.
+      Não compartilhamos suas informações com terceiros além dos serviços
+      do Google citados acima.
+    </p>
+
+    <h2>4. Permissões do aplicativo</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Permissão</th>
+          <th>Por que é necessária</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>INTERNET</code></td>
+          <td>Necessária apenas para exibir anúncios (AdMob) e processar a compra do Pro (Google Play). A geração do recibo em si não usa internet.</td>
+        </tr>
+        <tr>
+          <td><code>com.android.vending.BILLING</code></td>
+          <td>Necessária pelo Google Play para processar a compra opcional do Recibo Fácil Pro.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>5. Anúncios e personalização</h2>
+    <p>
+      O Recibo Fácil exibe anúncios intersticiais (tela cheia) fornecidos pelo
+      Google AdMob. Os anúncios aparecem somente <strong>após a geração de um
+      recibo</strong>, com frequência limitada para não atrapalhar o uso.
+    </p>
+    <p>
+      Você pode controlar a personalização de anúncios diretamente nas
+      configurações do seu aparelho Android:
+    </p>
+    <ul>
+      <li><strong>Configurações → Google → Anúncios</strong> — você pode redefinir
+        o ID de publicidade ou desativar anúncios personalizados.</li>
+    </ul>
+    <p>
+      Se preferir uma experiência sem anúncios, você pode adquirir o
+      <strong>Recibo Fácil Pro</strong> dentro do app (compra única, sem
+      assinatura) que remove permanentemente todos os anúncios.
+    </p>
+
+    <h2>6. Compras dentro do app</h2>
+    <p>
+      O Recibo Fácil oferece uma compra única chamada
+      <strong>"Recibo Fácil Pro"</strong>, que remove os anúncios do app.
+      A compra é processada exclusivamente pelo <strong>Google Play Billing</strong>.
+    </p>
+    <p>
+      <strong>Nós não recebemos, não processamos e não armazenamos</strong>
+      informações de cartão de crédito, débito ou qualquer outro meio de
+      pagamento. Toda a transação é feita entre você e o Google.
+    </p>
+    <p>
+      Após a compra, o status "Pro" é registrado localmente no seu aparelho
+      (no armazenamento local do app). Se você reinstalar o app ou trocar de
+      aparelho usando a mesma conta Google, pode usar a opção
+      <strong>"Restaurar compras"</strong> no menu Configurações do app.
+    </p>
+
+    <h2>7. Crianças</h2>
+    <p>
+      O Recibo Fácil <strong>não é destinado a menores de 18 anos</strong>.
+      Não coletamos intencionalmente dados de crianças. Se você é responsável
+      legal por uma criança e acredita que ela usou o app, entre em contato
+      pelo e-mail abaixo para que possamos auxiliar.
+    </p>
+
+    <h2>8. Seus direitos (LGPD)</h2>
+    <p>
+      Como os dados que você digita ficam apenas no seu aparelho, você tem
+      controle direto sobre eles:
+    </p>
+    <ul>
+      <li><strong>Acesso e correção:</strong> use as próprias telas do app
+        para visualizar e editar suas informações.</li>
+      <li><strong>Exclusão:</strong> use o botão "Limpar histórico" dentro do
+        app, ou desinstale o app para remover todos os dados locais.</li>
+      <li><strong>Identificadores publicitários:</strong> são gerenciados
+        diretamente nas configurações do Android (item 5).</li>
+    </ul>
+    <p>
+      Para outras solicitações relacionadas à LGPD (como dúvidas sobre
+      tratamento de dados), entre em contato pelo e-mail no rodapé desta página.
+    </p>
+
+    <h2>9. Segurança</h2>
+    <p>
+      Os dados ficam armazenados no espaço privado do app dentro do seu
+      aparelho, isolado de outros aplicativos pelo sistema operacional Android.
+      Recomendamos que você proteja seu aparelho com senha, biometria ou PIN
+      para impedir o acesso não autorizado.
+    </p>
+
+    <h2>10. Alterações nesta política</h2>
+    <p>
+      Esta política pode ser atualizada quando lançarmos novas versões do app
+      ou quando os serviços de terceiros mudarem suas práticas. A data da
+      última atualização sempre estará indicada no topo. Recomendamos que
+      você revisite esta página periodicamente.
+    </p>
+
+    <h2>11. Contato</h2>
+    <p>
+      Para qualquer dúvida ou solicitação relacionada a esta política ou ao
+      tratamento dos seus dados:
+    </p>
+    <ul>
+      <li><strong>Desenvolvedor:</strong> Adelge Solutions</li>
+      <li><strong>E-mail:</strong> <a href="mailto:adelgelima@gmail.com">adelgelima@gmail.com</a></li>
+    </ul>
+
+  </article>
+
+  <!-- ============================================================
+       ENGLISH
+       ============================================================ -->
+  <article id="content-en" lang="en">
+
+    <div class="meta">Last updated: May 1, 2026</div>
+
+    <p>
+      This Privacy Policy describes how the <strong>Recibo Fácil</strong>
+      application ("the app", "we") handles user information ("you") in
+      compliance with the Brazilian General Data Protection Law (LGPD), the
+      EU General Data Protection Regulation (GDPR) where applicable, and
+      Google Play policies.
+    </p>
+
+    <div class="highlight">
+      <strong>Summary:</strong> Recibo Fácil works 100% offline. All data
+      you enter (client name, amounts, descriptions, tax IDs) is stored
+      <strong>only on your device</strong>. We do not transmit anything to
+      our servers. The only information that leaves your device is collected
+      by Google AdMob (for ads) and Google Play (if you purchase Recibo
+      Fácil Pro).
+    </div>
+
+    <h2>1. About Recibo Fácil</h2>
+    <p>
+      Recibo Fácil is an Android application that allows users to generate
+      payment receipts in PDF format directly from their smartphone. It is
+      designed for self-employed professionals, service providers, freelancers
+      and small business owners who need to issue receipts as part of their
+      daily activities.
+    </p>
+    <p>
+      The user fills in receipt details (client name, service description,
+      amount, date, provider name and tax identification number — CPF or CNPJ
+      in Brazil) and the app generates a formatted PDF that can be shared
+      through the device's native sharing apps (WhatsApp, email, messaging,
+      etc.) or saved locally.
+    </p>
+
+    <h2>2. What data does the app collect?</h2>
+
+    <h3>2.1 Data you enter into the app</h3>
+    <p>
+      When you use Recibo Fácil, you type information such as client name,
+      service description, amount, date, provider name and tax ID number.
+      <strong>This data is stored exclusively on your device</strong>, in
+      the local storage of the app's WebView (<code>localStorage</code>).
+    </p>
+    <p>
+      We <strong>do not receive, access or store</strong> this information
+      on any server. When you uninstall the app, this data is deleted with it.
+    </p>
+
+    <h3>2.2 Data collected automatically by third parties</h3>
+    <p>
+      The app uses third-party services that may collect limited information
+      from your device:
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Data collected</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google AdMob</td>
+          <td>Advertising ID, device type, OS version, language, approximate location (IP-based)</td>
+          <td>Ad serving, personalization, performance measurement</td>
+        </tr>
+        <tr>
+          <td>Google Play Billing</td>
+          <td>Purchase token (only if you buy Recibo Fácil Pro)</td>
+          <td>Processing the one-time in-app purchase</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      These services are operated by <strong>Google LLC</strong>. Their
+      privacy practices are described at
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.
+    </p>
+
+    <h2>3. How is the data used?</h2>
+    <ul>
+      <li><strong>Data you enter:</strong> used only to generate the receipt
+        PDF, maintain the local history and pre-fill fields the next time
+        you use the app.</li>
+      <li><strong>Advertising identifiers:</strong> used by Google AdMob to
+        show more relevant ads and measure ad performance.</li>
+      <li><strong>Purchase token:</strong> used by Google Play to confirm
+        you have bought the Pro version and remove ads.</li>
+    </ul>
+    <p>
+      We do not sell your data. We do not perform user profiling. We do not
+      share your information with third parties other than the Google services
+      mentioned above.
+    </p>
+
+    <h2>4. App permissions</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Permission</th>
+          <th>Why it's required</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>INTERNET</code></td>
+          <td>Required only for serving ads (AdMob) and processing the Pro purchase (Google Play). The receipt generation itself does not use the internet.</td>
+        </tr>
+        <tr>
+          <td><code>com.android.vending.BILLING</code></td>
+          <td>Required by Google Play to process the optional Recibo Fácil Pro purchase.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>5. Advertising and personalization</h2>
+    <p>
+      Recibo Fácil displays interstitial (full-screen) advertisements served
+      by Google AdMob. Ads only appear <strong>after a receipt has been
+      generated</strong>, with a capped frequency to avoid disrupting usage.
+    </p>
+    <p>
+      You can control ad personalization directly in your Android device
+      settings:
+    </p>
+    <ul>
+      <li><strong>Settings → Google → Ads</strong> — you can reset your
+        Advertising ID or opt out of personalized ads.</li>
+    </ul>
+    <p>
+      If you prefer an ad-free experience, you can purchase
+      <strong>Recibo Fácil Pro</strong> inside the app (one-time payment,
+      no subscription) which permanently removes all advertisements.
+    </p>
+
+    <h2>6. In-app purchases</h2>
+    <p>
+      Recibo Fácil offers a one-time purchase called
+      <strong>"Recibo Fácil Pro"</strong>, which removes ads from the app.
+      The purchase is processed exclusively by <strong>Google Play Billing</strong>.
+    </p>
+    <p>
+      We <strong>do not receive, process or store</strong> credit card,
+      debit card or any other payment information. The entire transaction
+      happens between you and Google.
+    </p>
+    <p>
+      After purchase, the "Pro" status is recorded locally on your device.
+      If you reinstall the app or switch devices using the same Google
+      account, you can use the <strong>"Restore purchases"</strong> option
+      in the app's Settings menu.
+    </p>
+
+    <h2>7. Children</h2>
+    <p>
+      Recibo Fácil is <strong>not intended for users under 18 years of age</strong>.
+      We do not knowingly collect data from children. If you are a legal
+      guardian and believe a child has used the app, please contact us at
+      the email below so we can assist.
+    </p>
+
+    <h2>8. Your rights</h2>
+    <p>
+      Since the data you enter is stored only on your device, you have direct
+      control over it:
+    </p>
+    <ul>
+      <li><strong>Access and correction:</strong> use the app's own screens
+        to view and edit your information.</li>
+      <li><strong>Deletion:</strong> use the "Clear history" button inside
+        the app, or uninstall the app to remove all local data.</li>
+      <li><strong>Advertising identifiers:</strong> managed directly in
+        Android's settings (see section 5).</li>
+    </ul>
+    <p>
+      For other requests related to LGPD or GDPR (such as questions about
+      data processing), contact us at the email in the footer of this page.
+    </p>
+
+    <h2>9. Security</h2>
+    <p>
+      Data is stored within the app's private storage on your device,
+      isolated from other apps by the Android operating system. We recommend
+      protecting your device with a password, biometrics or PIN to prevent
+      unauthorized access.
+    </p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>
+      This policy may be updated when we release new versions of the app or
+      when third-party services change their practices. The date of the last
+      update will always be shown at the top. We recommend revisiting this
+      page periodically.
+    </p>
+
+    <h2>11. Contact</h2>
+    <p>
+      For any questions or requests related to this policy or the handling
+      of your data:
+    </p>
+    <ul>
+      <li><strong>Developer:</strong> Adelge Solutions</li>
+      <li><strong>Email:</strong> <a href="mailto:adelgelima@gmail.com">adelgelima@gmail.com</a></li>
+    </ul>
+
+  </article>
+
+</main>
+
+<footer>
+  © 2026 Recibo Fácil. <span id="footer-text">Todos os direitos reservados.</span>
+</footer>
+
+<script>
+  // Lang toggle with persistence
+  (function () {
+    const btnPt = document.getElementById('btn-pt');
+    const btnEn = document.getElementById('btn-en');
+    const ptArt = document.getElementById('content-pt');
+    const enArt = document.getElementById('content-en');
+    const headerSub = document.getElementById('header-sub');
+    const footerText = document.getElementById('footer-text');
+
+    function setLang(lang) {
+      const isPt = lang === 'pt';
+      ptArt.classList.toggle('active', isPt);
+      enArt.classList.toggle('active', !isPt);
+      btnPt.classList.toggle('active', isPt);
+      btnEn.classList.toggle('active', !isPt);
+      btnPt.setAttribute('aria-selected', isPt ? 'true' : 'false');
+      btnEn.setAttribute('aria-selected', isPt ? 'false' : 'true');
+      document.documentElement.lang = isPt ? 'pt-BR' : 'en';
+      headerSub.textContent = isPt ? 'Política de Privacidade' : 'Privacy Policy';
+      footerText.textContent = isPt ? 'Todos os direitos reservados.' : 'All rights reserved.';
+      try { localStorage.setItem('rf-privacy-lang', lang); } catch (e) {}
+    }
+
+    btnPt.addEventListener('click', () => setLang('pt'));
+    btnEn.addEventListener('click', () => setLang('en'));
+
+    // Auto-detect on first visit
+    let initial = 'pt';
+    try {
+      const saved = localStorage.getItem('rf-privacy-lang');
+      if (saved === 'pt' || saved === 'en') {
+        initial = saved;
+      } else if (navigator.language && !navigator.language.toLowerCase().startsWith('pt')) {
+        initial = 'en';
+      }
+    } catch (e) {}
+    setLang(initial);
+  })();
+</script>
+
+</body>
+</html>
